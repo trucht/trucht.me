@@ -34,7 +34,7 @@ const Navbar = () => {
  ]
 
  return (
-  <header className='w-full h-16 bg-white sticky top-0 shadow-lg px-4'>
+  <header className='w-full h-16 bg-white sticky top-0 shadow-lg px-4 z-30'>
    <nav className='h-full flex justify-between items-center container mx-auto text-[#595454]'>
     <NavLink href={"/"} label={"trucht"} />
     <div className="menu">
