@@ -22,7 +22,7 @@ function DarkModeToggler() {
 
  return (
   <div className={`dark:bg-gray-900 ${isDarkMode ? 'dark:text-white' : 'text-black'}`}>
-   <button onClick={toggleDarkMode} className="inline-block bg-[#6BB67F] dark:bg-[#1A3F55] text-white px-4 py-2">
+   <button onClick={toggleDarkMode} className="inline-block bg-[#6BB67F] dark:bg-[#1A3F55] dark:rounded-md text-white px-4 py-2">
     {isDarkMode ?
      <Image src={iconSun} alt="alt" width={20} height={20} />
      :

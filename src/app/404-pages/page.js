@@ -6,7 +6,7 @@ import DarkModeToggler from "@/app/components/DarkModeToggler";
 
 export default function Home() {
  return (
-  <div className="h-full w-full bg-[#E7FFF8] dark:bg-[#122638] relative overflow-hidden">
+  <div className="min-h-full w-full bg-[#E7FFF8] dark:bg-[#122638] relative overflow-hidden">
    <div className="h-16 flex items-center justify-between px-8">
     <Link href={"/"} className="text-[#6BB67F dark:text-white text-2xl font-semibold">trucht</Link>
     <DarkModeToggler />
@@ -26,15 +26,15 @@ export default function Home() {
     </div>
    </div>
 
-   <div className="max-w-[1440px] mx-auto h-full w-full hidden dark:flex gap-4 flex-col md:flex-row items-center justify-between p-4 lg:px-20">
+   <div className="max-w-[1440px] mx-auto h-full w-full hidden dark:flex gap-4 flex-col md:flex-row items-center justify-between p-4 lg:p-20">
 
     <div className='w-full md:w-1/2 text-center bg-[url("/404.png")] bg-no-repeat bg-contain pt-48'>
      <h1 className="text-5xl text-white">OOOps!<br />Page Not Found</h1>
      <p className="text-xl text-white mt-6 font-extralight">Sorry about that! Please visit our homepage to get where you need to go.</p>
      <Link href={"/"} className="inline-block bg-[#1A3F55] text-white px-8 py-4 mt-6 text-sm rounded-lg">Back to homepage</Link>
     </div>
-    <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
-     <Image src={"/404-dark.svg"} alt="404-dark" height={489} width={475} className="animate-rotate" />
+    <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-8">
+     <Image src={"/404-dark.svg"} alt="404-dark" height={489} width={475} className="animate-rotate max-w-full" />
     </div>
    </div>
 

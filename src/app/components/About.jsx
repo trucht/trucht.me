@@ -1,48 +1,44 @@
-"use client"
-import React from 'react';
-import Image from 'next/Image';
-
-
-const techSkills = [
- "Javascript",
- "Node.js",
- "SASS",
- "React",
- "HTML",
- "CSS",
- "Tailwind",
- "Bootstrap",
- "CLI",
- "Git",
- "Shopify",
-]
+"use client";
+import React from "react";
+import Image from "next/image";
 
 const About = () => {
- return (
-  <div id="about" className="container flex flex-wrap lg:flex-nowrap justify-center items-baseline gap-8 lg:gap-16 py-16 mx-auto px-4 xl:px-0">
-   <section className="w-full lg:w-1/2">
-    <h2 className='text-[#597b6a] text-2xl md:text-4xl mb-10 text-center lg:text-start'>About me</h2>
-    <p className='text-base md:text-xl break-words leading-relaxed text-justify'>
-     "Ahoy, fellow netizens! This is Truc, also known as Nina, a front-end voyager navigating the boundless seas of code.
-     With 4 years of hoisting sails and exploring HTML islands, my coding journey has only just set sail.
-     I'm not merely a developer;
-     I'm a perpetual learner on a quest for the next coding treasure chest;"
-    </p>
-   </section >
-   <section className="w-full lg:w-1/2">
-   <h2 className='text-[#597b6a] text-2xl md:text-4xl mb-10 text-center lg:text-start'>Technical Skills</h2>
-    <ul className="flex flex-wrap gap-6 justify-evenly lg:justify-start">
-     {
-      techSkills.map((skill, index) => (
-       <li key={index} className='block lg:hover:animate-bounce w-max py-2 px-4 border border-[#b4b0ab] rounded shadow-[5px_5px_0px_0px_#b4b0ab] font-semibold text-xl cursor-default	'>
-        {skill}
-       </li>
-      ))
-     }
-    </ul>
-   </section>
-  </div >
- )
-}
+  return (
+    <section
+      id="about"
+      className="container mx-auto px-4 flex flex-col md:flex-row flex-nowrap justify-evenly items-center gap-16"
+    >
+      <Image
+        src="/about-me.svg"
+        alt="about-me"
+        width={320}
+        height={366}
+        className="max-h-screen md:h-[500px] w-full md:w-2/5"
+      />
+      <div className="w-full md:w-2/5 py-8">
+        <h2 className="heading-2">
+          About <span className="font-bold">Me</span>
+        </h2>
+        <p className="text-neutral-500">
+          I&apos;m an enthusiastic Software Developer driven by a passion for
+          innovation and a relentless hunger for learning. With foundational
+          experience in professional web development, I specialize in JavaScript
+          ES6, ReactJS, and Node.js. I thrive on solving complex problems and
+          delivering high-quality solutions, always maintaining a keen eye for
+          detail and taking a proactive approach to every task.
+        </p>
+        <p className="text-neutral-500 mt-8">
+          Adaptability is one of my core strengths, and I eagerly embrace new
+          challenges as opportunities for growth. Committed to continuous
+          learning, I stay abreast of industry trends and advancements to ensure
+          my skills remain relevant and up-to-date. Collaboration is key in my
+          approach, and I actively seek out opportunities to work closely with
+          teams to drive successful project outcomes, leveraging my expertise to
+          contribute effectively to each endeavor.
+        </p>
+      </div>
+    </section>
+  );
+};
 
 export default About;
