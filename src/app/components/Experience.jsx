@@ -6,7 +6,7 @@ const Projects = () => {
     <section id="experiences" className="bg-primary py-16 px-4">
       <div className="container mx-auto px-4">
         <h2 className="heading-2 text-white">
-          My<span className="font-bold "> Experience</span>
+          My Experiences
         </h2>
         <div className="flex flex-col gap-8">
           <ExperienceCard

@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-white py-16 px-4">
       <div className="container w-full md:w-2/3 mx-auto flex flex-wrap flex-col lg:flex-row justify-center items-center gap-4 lg:gap-16">
-        <h2 className="text-black text-2xl lg:text-4xl font-semibold text-center">
+        <h2 className="text-black text-2xl lg:text-4xl text-center">
           Let&apos;s link up for something special
         </h2>
         <p className="text-base text-neutral-500 text-center">

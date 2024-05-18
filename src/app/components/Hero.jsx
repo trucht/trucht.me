@@ -8,14 +8,10 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="container mx-auto flex flex-col md:flex-row justify-center items-center px-4 lg:px-28 pb-10 pt-16 gap-8"
+      className="container mx-auto flex flex-col-reverse md:flex-row justify-center items-center px-4 lg:px-28 pb-10 pt-16 gap-8"
     >
       <div className="w-full md:w-1/2">
-        <h1 className="text-2xl md:text-4xl leading-8">
-          Hello,
-          <br /> I&apos;m <span className="font-semibold">Truc Huynh</span>
-        </h1>
-        <h3 className="text-2xl mt-4">Software Developer</h3>
+        <h1 className="text-2xl md:text-4xl leading-8">Hello there!</h1>
         <p className="text-neutral-500 mt-8">
           I&apos;m not merely a developer;
           <br />
@@ -50,7 +46,7 @@ const Hero = () => {
         alt="alt"
         width={720}
         height={1280}
-        className="w-full md:w-1/3 object-center object-cover"
+        className="max-h-screen w-auto md:w-1/3 object-center object-cover"
       />
     </section>
   );
