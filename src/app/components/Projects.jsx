@@ -35,9 +35,7 @@ const Projects = () => {
             <h3 className="heading-3">Emma</h3>
           </Link>
           <Link
-            href={
-              "https://medium.com/dwarves-design/https-medium-com-dwarves-design-sol-life-like-prototype-with-protopie-ad7931ace57a"
-            }
+            href={"https://www.behance.net/gallery/79084283/Sol-App"}
             className="cursor-pointer flex flex-col gap-4 items-center w-full md:w-1/3"
           >
             <Image
