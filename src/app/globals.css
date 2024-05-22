@@ -49,7 +49,8 @@ h5,
 h6,
 p,
 a,
-li {
+li,
+input {
   font-family: 'Plus Jakarta Sans', monospace;
 }
 
