@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import PasswordStrengthMeter from "./PasswordStrengthMeter";
 
 const validationSchema = Yup.object({
   firstName: Yup.string().required("First name is required."),
@@ -131,6 +132,7 @@ const RegisterForm = () => {
           placeholder="Password"
           error={formik.touched.password && formik.errors.password}
         />
+        <PasswordStrengthMeter password={formik.values.password} />
         <InputField
           type="password"
           name="confirmPassword"
@@ -143,7 +145,9 @@ const RegisterForm = () => {
           }
         />
         {!isEmailAvailable && (
-          <p className="text-[#32403B] text-base text-center">Email is already registered.</p>
+          <p className="text-[#32403B] text-base text-center">
+            Email is already registered.
+          </p>
         )}
         <button
           type="submit"
