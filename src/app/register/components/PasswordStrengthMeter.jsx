@@ -13,9 +13,9 @@ const calculatePasswordStrength = (password) => {
 };
 
 const getPasswordStrength = (password) => {
-  const strength = ["Weak", "Medium", "Strong", "Very Strong"];
+  const strength = [" ", "Weak", "Medium", "Strong", "Very Strong"];
   const score = calculatePasswordStrength(password);
-  return score === 0 ? "" : strength[score + 1];
+  return score === 0 ? "" : strength[score];
 };
 
 const getColor = (score) => {
